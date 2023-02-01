@@ -1,0 +1,25 @@
+
+<div class="container">
+  
+    <h1>Catalogo. </h1>
+  
+    <div *ngFor="let servicio of servicios">
+  
+      <div class="card-principal" style="width: 18rem;">
+    
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">{{servicio.nombre}}</h5>
+          <p class="card-text">{{servicio.precio | currency:'$: '}}</p>
+          <p class="card-text">{{servicio.codigo}}</p>
+          <div class="card-fondo">
+            <p class="card-text">{{servicio.descripcion}}</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">{{servicio.fecha}}</small>
+        </div>
+    
+      </div>
+    </div>
+  </div>

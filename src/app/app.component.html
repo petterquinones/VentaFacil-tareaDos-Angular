@@ -1,2 +1,21 @@
 
-<app-catalogo></app-catalogo>
+<!-- uso del ngModels -->
+<select [(ngModel)]="seleccion" >
+    <!-- Opciones que apareceran en el menú del select -->}
+    <option value="">Seleccione una opción</option>
+    <option value="producto">Producto</option>
+    <option value="servicio">servicio</option> 
+
+</select>
+
+<!-- Condición si la variable toma el valor de product -->
+<div *ngIf="seleccion == 'producto'">  
+        <app-catalogo></app-catalogo>   
+</div>
+
+<div *ngIf="seleccion =='servicio'">  
+    <app-servicio></app-servicio>   
+</div>
+
+
+
