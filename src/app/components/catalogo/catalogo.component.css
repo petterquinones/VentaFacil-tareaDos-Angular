@@ -1,0 +1,17 @@
+.card-principal{
+    background: linear-gradient(45deg, rgba(214,247,255,1) 0%, rgba(117,189,209,1) 0%, rgba(117,189,209,0) 100%);
+    border: 1px solid rgb(35, 6, 1);
+    border-radius: 10px;
+    box-shadow: 10px 10px 4px 0px rgba(213,236,245,1);
+    color: rgb(4, 19, 119);
+    float: right;
+    padding: 1%;
+    margin: 1%;
+  }
+
+  .card-fondo{
+    background: rgb(244, 240, 232);
+    border-radius: 10px;
+    margin: 2%;
+    padding: 2%;
+  }

@@ -1,0 +1,28 @@
+
+
+<div class="container">
+  
+  <h1>Catalogo. </h1>
+
+  <div *ngFor="let producto of productos">
+
+    <div class="card-principal" style="width: 18rem;">
+  
+      <!-- <img src="..." class="card-img-top" alt="..."> -->
+      <div class="card-body">
+        <h5 class="card-title">{{producto.nombre}}</h5>
+        <p class="card-text">{{producto.marca}}</p>
+        <p class="card-text">{{producto.modelo}}</p>
+        <p class="card-text">{{producto.precio | currency:'$: '}}</p>
+        <p class="card-text">{{producto.codigo}}</p>
+        <div class="card-fondo">
+          <p class="card-text">{{producto.descripcion}}</p>
+        </div>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">{{producto.fecha}}</small>
+      </div>
+  
+    </div>
+  </div>
+</div>
